@@ -2,6 +2,9 @@
 install: # deps install
 	poetry install
 
+lint: #project linter check
+	poetry run flake8 brain_games
+
 build: # Build project
 	poetry build
 
