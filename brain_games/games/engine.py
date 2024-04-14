@@ -86,3 +86,20 @@ def progression(user):
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
             i = 0
     print(f'Congratulations, {user}')
+
+
+def prime(user):
+    i = 0
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    while i < 3:
+        number = random.randint(0, 100)
+        print(f'Question: {number}')
+        answer = prompt.string('Your answer: ')
+        if (answer == 'yes' and my_math.is_prime(number) == True
+                or answer == 'no' and my_math.is_prime(number) == False):
+            print('Correct!')
+            i += 1
+        else:
+            print(f"Incorrect\nLet's try again, {user}!")
+            i = 0
+    print(f'Congratulations, {user}')
