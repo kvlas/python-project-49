@@ -63,3 +63,26 @@ def gcd(user):
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
             i = 0
     print(f'Congratulations, {user}')
+
+
+def progression(user):    
+    i = 0
+    print('What number is missing in the progression?')
+    while i < 3:
+        l = random.randint(5, 10)
+        g = random.randint(10,90)
+        s = random.randint(1,10)
+        progression = my_math.my_ap(s, g, l)
+        v = random.randint(1,len(progression) - 1)
+        corretct_answer = progression[v]
+        progression[v] = '..'
+        li = ' '.join(str(x) for x in progression)
+        print(f'Question: {li}')
+        answer = prompt.string('Your answer: ')
+        if answer == str(corretct_answer):
+            print('Correct!')
+            i += 1
+        else:        
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
+            i = 0
+    print(f'Congratulations, {user}')
