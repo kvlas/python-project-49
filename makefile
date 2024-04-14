@@ -25,3 +25,9 @@ brain-calc: # Run game calc
 
 brain-gcd: # Run game calc
 	poetry run brain-gcd
+
+brain-progression: # Run game calc
+	poetry run brain-progression
+
+brain-prime: # Run game calc
+	poetry run brain-prime
