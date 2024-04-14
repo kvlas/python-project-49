@@ -18,9 +18,9 @@ def is_even(user):
             i += 1
         else:
             print(f"Incorrect\nLet's try again, {user}!")
-            i = 0
-    print(f'Congratulations, {user}!')
-
+            break
+            return None
+        print(f'Congratulations, {user}!') 
 
 def calc(user):
     i = 0
@@ -43,7 +43,8 @@ def calc(user):
             i += 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
-            i = 0
+            break
+            return None
     print(f'Congratulations, {user}!')
 
 
@@ -61,7 +62,8 @@ def gcd(user):
             i += 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
-            i = 0
+            break
+            return None
     print(f'Congratulations, {user}!')
 
 
@@ -84,7 +86,8 @@ def progression(user):
             i += 1
         else:        
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
-            i = 0
+            break
+            return None
     print(f'Congratulations, {user}!')
 
 
@@ -101,5 +104,6 @@ def prime(user):
             i += 1
         else:
             print(f"Incorrect\nLet's try again, {user}!")
-            i = 0
+            break
+            return None
     print(f'Congratulations, {user}!')
