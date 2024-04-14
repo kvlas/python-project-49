@@ -54,7 +54,7 @@ def gcd(user):
     while i < 3:
         number_1 = random.randint(0, 100)
         number_2 = random.randint(0, 100)
-        print(f'Question: {number_1}  {number_2}')
+        print(f'Question: {number_1} {number_2}')
         answer = prompt.string('Your answer: ')
         corretct_answer = my_math.my_gcd(number_1, number_2)
         if answer == str(corretct_answer):

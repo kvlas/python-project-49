@@ -23,11 +23,11 @@ brain-even: # Run game even
 brain-calc: # Run game calc
 	poetry run brain-calc
 
-brain-gcd: # Run game calc
+brain-gcd: # Run game gcd
 	poetry run brain-gcd
 
-brain-progression: # Run game calc
+brain-progression: # Run game progression
 	poetry run brain-progression
 
-brain-prime: # Run game calc
+brain-prime: # Run game prime
 	poetry run brain-prime
