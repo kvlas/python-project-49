@@ -41,6 +41,6 @@ def calc(user):
             print('Correct!')
             i += 1
         else:
-            print(f"'145' is wrong answer ;(. Correct answer was '{corrtct_answer}'.\nLet's try again, {user}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{corrtct_answer}'.\nLet's try again, {user}!")
             i = 0
     print(f'Congratulations, {user}')
