@@ -5,7 +5,7 @@ import math
 from brain_games.scripts import cli
 from brain_games.games import my_math
 
-def odd_or_even(user):
+def is_even(user):
     i = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while i < 3:
@@ -19,7 +19,7 @@ def odd_or_even(user):
         else:
             print(f"Incorrect\nLet's try again, {user}!")
             i = 0
-    print(f'Congratulations, {user}')
+    print(f'Congratulations, {user}!')
 
 
 def calc(user):
@@ -44,7 +44,7 @@ def calc(user):
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
             i = 0
-    print(f'Congratulations, {user}')
+    print(f'Congratulations, {user}!')
 
 
 def gcd(user):
@@ -62,7 +62,7 @@ def gcd(user):
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
             i = 0
-    print(f'Congratulations, {user}')
+    print(f'Congratulations, {user}!')
 
 
 def progression(user):    
@@ -85,7 +85,7 @@ def progression(user):
         else:        
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
             i = 0
-    print(f'Congratulations, {user}')
+    print(f'Congratulations, {user}!')
 
 
 def prime(user):
@@ -102,4 +102,4 @@ def prime(user):
         else:
             print(f"Incorrect\nLet's try again, {user}!")
             i = 0
-    print(f'Congratulations, {user}')
+    print(f'Congratulations, {user}!')
