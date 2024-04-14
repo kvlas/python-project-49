@@ -8,11 +8,17 @@ lint: #project linter check
 build: # Build project
 	poetry build
 
-publish: #
+publish: # Publish package
 	poetry publish --dry-run
 
-package-install: #
+package-install: # Install package
 	python3 -m pip install --user dist/*.whl
 
 brain-games: # Run project
 	poetry run brain-games
+
+brain-even: # Run game even
+	poetry run brain-even
+
+brain-calc: # Run game calc
+	poetry run brain-calc
