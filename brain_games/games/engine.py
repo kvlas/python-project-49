@@ -1,9 +1,8 @@
 import prompt
 import operator
 import random
-import math
-from brain_games.scripts import cli
 from brain_games.games import my_math
+
 
 def is_even(user):
     i = 0
@@ -20,7 +19,8 @@ def is_even(user):
             print(f"Incorrect\nLet's try again, {user}!")
             break
             return None
-        print(f'Congratulations, {user}!') 
+        print(f'Congratulations, {user}!')
+
 
 def calc(user):
     i = 0
@@ -42,7 +42,9 @@ def calc(user):
             print('Correct!')
             i += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{corretct_answer}'."
+                  f"\nLet's try again, {user}!")
             break
             return None
     print(f'Congratulations, {user}!')
@@ -61,21 +63,23 @@ def gcd(user):
             print('Correct!')
             i += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{corretct_answer}'."
+                  f"\nLet's try again, {user}!")
             break
             return None
     print(f'Congratulations, {user}!')
 
 
-def progression(user):    
+def progression(user):
     i = 0
     print('What number is missing in the progression?')
     while i < 3:
-        l = random.randint(5, 10)
-        g = random.randint(10,90)
-        s = random.randint(1,10)
-        progression = my_math.my_ap(s, g, l)
-        v = random.randint(1,len(progression) - 1)
+        length = random.randint(5, 10)
+        g = random.randint(10, 90)
+        s = random.randint(1, 10)
+        progression = my_math.my_ap(s, g, length)
+        v = random.randint(1, len(progression) - 1)
         corretct_answer = progression[v]
         progression[v] = '..'
         li = ' '.join(str(x) for x in progression)
@@ -84,8 +88,10 @@ def progression(user):
         if answer == str(corretct_answer):
             print('Correct!')
             i += 1
-        else:        
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{corretct_answer}'.\nLet's try again, {user}!")
+        else:
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{corretct_answer}'."
+                  f"\nLet's try again, {user}!")
             break
             return None
     print(f'Congratulations, {user}!')
@@ -98,8 +104,8 @@ def prime(user):
         number = random.randint(0, 100)
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
-        if (answer == 'yes' and my_math.is_prime(number) == True
-                or answer == 'no' and my_math.is_prime(number) == False):
+        if (answer == 'yes' and my_math.is_prime(number) is True
+                or answer == 'no' and my_math.is_prime(number) is False):
             print('Correct!')
             i += 1
         else:

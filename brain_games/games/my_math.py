@@ -1,10 +1,10 @@
-def my_gcd(m,n):
-    while m != n:
-        if m > n:
-            m = m - n
+def my_gcd(a, b):
+    while a != b:
+        if a > b:
+            a = a - b
         else:
-            n = n - m
-    return n
+            b = b - a
+    return b
 
 
 def my_ap(a, d, n):
@@ -14,6 +14,7 @@ def my_ap(a, d, n):
         curr_term = curr_term + d
         lst.append(curr_term)
     return lst
+
 
 def is_prime(a):
     if a < 2:
