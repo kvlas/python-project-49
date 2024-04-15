@@ -6,7 +6,7 @@ from brain_games.games import my_math
 
 def even(user):
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    for i in range(0,3):
+    for i in range(0, 3):
         number = random.randint(0, 100)
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
@@ -28,7 +28,7 @@ def calc(user):
     }
     keys = list(operators)
     print('What is the result of the expression?')
-    for i in range(0,3):
+    for i in range(0, 3):
         picked_operator = random.choice(keys)
         number_1 = random.randint(0, 100)
         number_2 = random.randint(0, 100)
@@ -48,7 +48,7 @@ def calc(user):
 
 def gcd(user):
     print('Find the greatest common divisor of given numbers.')
-    for i in range(0,3):
+    for i in range(0, 3):
         number_1 = random.randint(0, 100)
         number_2 = random.randint(0, 100)
         print(f'Question: {number_1} {number_2}')
@@ -67,7 +67,7 @@ def gcd(user):
 
 def progression(user):
     print('What number is missing in the progression?')
-    for i in range(0,3):
+    for i in range(0, 3):
         length = random.randint(5, 10)
         g = random.randint(10, 90)
         s = random.randint(1, 10)
@@ -91,14 +91,13 @@ def progression(user):
 
 def prime(user):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    for i in range(0,3):
+    for i in range(0, 3):
         number = random.randint(0, 100)
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
         if (answer == 'yes' and my_math.is_prime(number) is True
                 or answer == 'no' and my_math.is_prime(number) is False):
             print('Correct!')
-            i += 1
         else:
             print(f"Incorrect\nLet's try again, {user}!")
             break
