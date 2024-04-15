@@ -1,8 +1,8 @@
 def is_even(a):
     if (a % 2) == 0:
-        return True
+        return 'yes'
     else:
-        return False
+        return 'no'
 
 
 def my_gcd(a, b):
@@ -25,9 +25,9 @@ def my_ap(a, d, n):
 
 def is_prime(a):
     if a < 2:
-        return False
+        return 'no'
     for i in range(2, int(a ** 0.5 + 1)):
         if a % i == 0:
-            return False
+            return 'no'
     else:
-        return True
+        return 'yes'

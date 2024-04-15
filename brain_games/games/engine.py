@@ -10,8 +10,8 @@ def even(user):
         number = random.randint(0, 100)
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
-        if (answer == 'yes' and my_math.is_even(number) is True
-                or answer == 'no' and my_math.is_even(number) is False):
+        correct_answer = my_math.is_even(number)
+        if answer.lower() == str(correct_answer):
             print('Correct!')
         else:
             print(f"Incorrect\nLet's try again, {user}!")
@@ -95,8 +95,8 @@ def prime(user):
         number = random.randint(0, 100)
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
-        if (answer == 'yes' and my_math.is_prime(number) is True
-                or answer == 'no' and my_math.is_prime(number) is False):
+        correct_answer = my_math.is_prime(number)
+        if answer.lower() == str(correct_answer):
             print('Correct!')
         else:
             print(f"Incorrect\nLet's try again, {user}!")
