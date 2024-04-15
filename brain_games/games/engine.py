@@ -17,7 +17,7 @@ def even(user):
             print(f"Incorrect\nLet's try again, {user}!")
             break
             return None
-        print(f'Congratulations, {user}!')
+    print(f'Congratulations, {user}!')
 
 
 def calc(user):
