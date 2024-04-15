@@ -4,15 +4,15 @@ import random
 from brain_games.games import my_math
 
 
-def is_even(user):
+def even(user):
     i = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while i < 3:
         number = random.randint(0, 100)
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
-        if (answer == 'yes' and number % 2 == 0
-                or answer == 'no' and number % 2 != 0):
+        if (answer == 'yes' and my_math.is_even(number) is True
+                or answer == 'no' and my_math.is_even(number) is False):
             print('Correct!')
             i += 1
         else:

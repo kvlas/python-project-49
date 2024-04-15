@@ -1,3 +1,10 @@
+def is_even(a):
+    if (a % 2) == 0:
+        return True
+    else:
+        return False
+
+
 def my_gcd(a, b):
     while a != b:
         if a > b:
