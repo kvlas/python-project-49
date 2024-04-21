@@ -4,7 +4,7 @@ from brain_games.games import engine
 
 
 def main():
-    engine.calc(cli.welcome_user())
+    engine.start('calc', cli.welcome_user())
 
 
 if __name__ == '__main__':
