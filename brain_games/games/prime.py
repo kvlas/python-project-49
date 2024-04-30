@@ -1,5 +1,4 @@
 import random
-from brain_games.games import my_math
 
 
 def task():
@@ -10,5 +9,15 @@ def task():
 def run():
     number = random.randint(0, 100)
     question = f'Question: {number}'
-    correct_answer = my_math.is_prime(number)
+    correct_answer = 'yes' if is_prime(number) else 'no'
     return {'question': question, 'correct_answer': correct_answer}
+
+
+def is_prime(digit: int):
+    if digit < 2:
+        return 'no'
+    for i in range(2, int(digit ** 0.5 + 1)):
+        if digit % i == 0:
+            return False
+    else:
+        return True

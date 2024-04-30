@@ -1,5 +1,4 @@
 import random
-from brain_games.games import my_math
 
 
 def task():
@@ -10,5 +9,12 @@ def task():
 def run():
     number = random.randint(0, 100)
     question = f'Question: {number}'
-    correct_answer = my_math.is_even(number)
+    correct_answer = 'yes' if is_even(number) else 'no'
     return {'question': question, 'correct_answer': correct_answer}
+
+
+def is_even(digit: int):
+    if (digit % 2) == 0:
+        return True
+    else:
+        return False
